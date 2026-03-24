@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="com.cmc.bai410.PrimaryController" stylesheets="@style.css">
+    
+    <TextField fx:id="display" editable="false" alignment="CENTER_RIGHT" 
+               style="-fx-font-size: 24; -fx-pref-height: 60;" />
+
+    <GridPane hgap="5" vgap="5">
+        <Button text="7" onAction="#handleNumber" GridPane.rowIndex="0" GridPane.columnIndex="0" prefWidth="60"/>
+        <Button text="8" onAction="#handleNumber" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="60"/>
+        <Button text="9" onAction="#handleNumber" GridPane.rowIndex="0" GridPane.columnIndex="2" prefWidth="60"/>
+        <Button text="/" onAction="#handleOperator" GridPane.rowIndex="0" GridPane.columnIndex="3" prefWidth="60" style="-fx-base: #ff9500;"/>
+
+        <Button text="4" onAction="#handleNumber" GridPane.rowIndex="1" GridPane.columnIndex="0" prefWidth="60"/>
+        <Button text="5" onAction="#handleNumber" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="60"/>
+        <Button text="6" onAction="#handleNumber" GridPane.rowIndex="1" GridPane.columnIndex="2" prefWidth="60"/>
+        <Button text="*" onAction="#handleOperator" GridPane.rowIndex="1" GridPane.columnIndex="3" prefWidth="60" style="-fx-base: #ff9500;"/>
+
+        <Button text="1" onAction="#handleNumber" GridPane.rowIndex="2" GridPane.columnIndex="0" prefWidth="60"/>
+        <Button text="2" onAction="#handleNumber" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="60"/>
+        <Button text="3" onAction="#handleNumber" GridPane.rowIndex="2" GridPane.columnIndex="2" prefWidth="60"/>
+        <Button text="-" onAction="#handleOperator" GridPane.rowIndex="2" GridPane.columnIndex="3" prefWidth="60" style="-fx-base: #ff9500;"/>
+
+        <Button text="C" onAction="#handleClear" GridPane.rowIndex="3" GridPane.columnIndex="0" prefWidth="60" style="-fx-base: #a5a5a5;"/>
+        <Button text="0" onAction="#handleNumber" GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="60"/>
+        <Button text="=" onAction="#handleEqual" GridPane.rowIndex="3" GridPane.columnIndex="2" prefWidth="60" style="-fx-base: #ff9500;"/>
+        <Button text="+" onAction="#handleOperator" GridPane.rowIndex="3" GridPane.columnIndex="3" prefWidth="60" style="-fx-base: #ff9500;"/>
+    </GridPane>
+</VBox>
